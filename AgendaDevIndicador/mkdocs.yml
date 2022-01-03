@@ -1,0 +1,7 @@
+site_name: Agenda Desenvolvimento Indicador
+
+nav:
+  - Agenda: index.md
+  - Observações: observacao.md
+
+theme: readthedocs
