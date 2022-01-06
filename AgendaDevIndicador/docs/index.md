@@ -3,7 +3,7 @@
 ## SEMANA 01
 * Testes com indicadores de pesagem.
 ### Atividades:
-* Leitura de manuais;
+* (OK) Leitura de manuais;
 * Calibração e comparação de resultados.
 
 ## SEMANA 02
