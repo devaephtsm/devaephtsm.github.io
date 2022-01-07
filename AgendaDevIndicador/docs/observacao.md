@@ -4,6 +4,11 @@
 ### Semana 01
 #### Atividades 
 
+- Dia 07:
+    - Teste de gravação realizado, com adaptação dos pinos CN7;
+    - Inicio do projeto New Matrix (STM32 Cube IDE); 
+    - Adaptação dos pinos CN5 (UART) debug de desenvolvimento da SEMANA2;
+    - Estudos Implementação FreeRTOS.
 - Dia 06:
     - Organização da bancada de desenvolvimento e testes iniciais da placa de desenvolvimento;
 - Dia 05: 
