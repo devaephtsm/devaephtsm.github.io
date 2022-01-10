@@ -1,15 +1,15 @@
 # Agenda de desenvolvimento Indicador de Pesagem
 
 ## SEMANA 01
-* Testes com indicadores de pesagem.
+* (Aguardando) Testes com indicadores de pesagem.
 ### Atividades:
 * (OK) Leitura de manuais;
-* Calibração e comparação de resultados.
+* (Aguardando) Calibração e comparação de resultados.
 
 ## SEMANA 02
-* Testes da placa de desenvolvimento microcontrolador/circuito ADC
+* (Iniciado) Testes da placa de desenvolvimento microcontrolador/circuito ADC
 ### Atividades:
-* Leitura direta do circuito ADC pelo microcontrolador com debug através da saída serial.
+* (Iniciado) Leitura direta do circuito ADC pelo microcontrolador com debug através da saída serial.
 
 ## SEMANA 03 a 06
 * Implementação do filtro Kalman ao processo de pesagem.

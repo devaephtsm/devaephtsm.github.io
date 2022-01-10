@@ -4,6 +4,19 @@
 ### Semana 01
 #### Atividades 
 
+- Dia 10:
+    - Inicio de testes adc;
+    - A comunicação serial será feita via software, o teste inicial será feita via polling e no futuro a biblioteca deve ser convertida para freeRTOS não bloqueante; 
+    - Solicitação de insumos para teste barra de pinos fêmea;
+    - Criação da biblioteca de leitura SPI (Software - Não Bloqueante) 
+        - Escrita (OK)
+            - Tempo de escrita de byte: 88.875us
+            ![](/img/time_byte_spi_write.png)
+            <br>            
+            ![](/img/info_bit_spi.png)
+            <br>
+        - Leitura (Pendente)
+
 - Dia 07:
     - Teste de gravação realizado, com adaptação dos pinos CN7;
     - Inicio do projeto New Matrix (STM32 Cube IDE); 
