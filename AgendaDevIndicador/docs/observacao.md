@@ -15,7 +15,7 @@
             <br>            
             ![](/img/info_bit_spi.png)
             <br>
-        - Leitura (Pendente)
+        - Leitura (Pendente).
 
 - Dia 07:
     - Teste de gravação realizado, com adaptação dos pinos CN7;
