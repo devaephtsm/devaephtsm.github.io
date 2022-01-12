@@ -107,6 +107,40 @@
 <h4 id="atividades">Atividades</h4>
 <ul>
 <li>
+<p>Dia 12: </p>
+<ul>
+<li>Teste da função "u8ReadCS1180()". Efetuado teste sobre o ad seguido da requisição de todos os registradores do ADC
+<img alt="" src="/img/u8ReadCS1180.png" /></li>
+<li>Criação da função "u8ReadCS1180()" (Não Testada)</li>
+<li>Criação da função "u8WriteCS1180()" (Não Testado)</li>
+<li>Criação da função "u8_ResetCS1180()" (Não Testado)</li>
+<li>Teste da função "u8_TestCS1180()"
+<img alt="" src="/img/func_u8_TestADC.png" /></li>
+</ul>
+</li>
+<li>
+<p>Dia 11:</p>
+<ul>
+<li>Inicio construção biblioteca cs1180</li>
+<li>Leitura de Byte em SPI em 16.16us e frequencia de clock em 545.45KHz
+<img alt="" src="/img/time_byte_spi_write5.png" />
+<br> 
+<img alt="" src="/img/time_byte_spi_write6.png" />
+<br> </li>
+<li>Cristal externo de 16MHz(desenvolvimento) inserido no lugar do anterior, alteração do tem de tráfego de 8bits em spi em +0.2us 
+<img alt="" src="/img/time_byte_spi_write4.png" /></li>
+<li>Criação da leitura SPI (inicio) </li>
+<li>Criação de "semaforo" para possivel multipla utilização do canal SPI "software", com retorno 0x00 para sucesso e 0x01 para falha na solicitação de escrita, indicando que o canal já estar em utilização</li>
+<li>A comunicação SPI foi atualizada tendo um ganho na frequencia. Motivo, cristal utilizado anteriormente (24.594MHz).
+<img alt="" src="/img/time_byte_spi_write3.png" />
+<br>      <br />
+<img alt="" src="/img/time_byte_spi_write2.png" />
+<br></li>
+<li>Foi diagnosticado um erro com relação ao cristal utilizado na placa de 24.594MHz para o de 25MHz. Para desenvolvimento será utilizado cristal de 16MHz
+<img alt="" src="/img/alteracao_cristal.png" /></li>
+</ul>
+</li>
+<li>
 <p>Dia 10:</p>
 <ul>
 <li>Inicio de testes adc;</li>
@@ -121,7 +155,7 @@
 <br></li>
 </ul>
 </li>
-<li>Leitura (Pendente)</li>
+<li>Leitura (Pendente).</li>
 </ul>
 </li>
 </ul>
@@ -150,6 +184,18 @@
 </ul>
 <h4 id="observacoes">Observações</h4>
 <ul>
+<li>Dia 12: <ul>
+<li>Foi necessário efetuar alterações na placa com o objetivode se obter um canal de debug para o circuito adc-spi de comunicação, a alteração teve duração de 2horas. A duração se deu em virtude de problemas encontrados durante a alteração;</li>
+<li>Foi observado através do teste realizado no dia de trabalho que é possivel através do firmware em desenvolvimento auxiliar nos processos de manutenção de equipamentos;<ul>
+<li>Atravez da certeza que os sinais CS, SDI, SDO, CLK e READ estão chegando no componente AD através de equipamentos como osciloscópio ou analisador lógico, o microcontrolador pode enviar o comando de teste da função "u8_TestADC()". A função pode verificar se o componente ADC esta funcionando corretamente. (Deve-se ter a certeza que as trilas, indutores estão em perfeito funcionamento)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Dia 11:<ul>
+<li>Solicitações de componentes apresentam um atraso na entrega o que pode impactar no tempo de desenvolvimento;</li>
+</ul>
+</li>
 <li>
 <p>Dia 06: </p>
 <ul>
