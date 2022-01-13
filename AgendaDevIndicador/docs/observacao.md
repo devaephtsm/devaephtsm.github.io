@@ -4,6 +4,32 @@
 ### Semana 01
 #### Atividades 
 
+- Dia 13:
+    - Criado biblioteca vERROR_CHECK() para tratativa de erros (Início)
+    - Criação da função de inicialização do adc com comparação e tratativa de erro (ainda não implementado)
+    ![](/img/adc_start_01.png)
+    ![](/img/adc_start_02.png)
+    ![](/img/adc_start_03.png)
+    ![](/img/adc_start_04.png)
+    ![](/img/adc_start_05.png)
+    ![](/img/adc_start_06.png)
+    ![](/img/adc_start_07.png)
+
+    - Testes com a configuração do indicador antigo (Configuração de registradores);
+    - Função de leitura do adc (testado)
+    ![](/img/func_leitura_data_adc.png)
+    - Verificações a respeito dos processos ocorridos no atual indicador de pesagem:
+        - Não é feito nenhuma escrita nos registradores de calibração;
+        - Ao iniciar o atual indicador efetua um comando de reset;
+        - São configurados alguns registradores 0x00, 0x01 e 0x02
+            - Ganho em 128
+            - Escrita de configuração defaut no registrador 1
+            - Escrita no registrador MUX com o valor1 
+            - Escrita no Registrador 0x02 do valor 0x04m ativando o registrador
+    - "u8WriteCS1180()" -> testado 
+        
+    - "u8_ResetCS1180()" -> testado
+
 - Dia 12: 
     - Teste da função "u8ReadCS1180()". Efetuado teste sobre o ad seguido da requisição de todos os registradores do ADC
     ![](/img/u8ReadCS1180.png)
@@ -13,8 +39,6 @@
     - Teste da função "u8_TestCS1180()"
     ![](/img/func_u8_TestADC.png)
 
-
-    
 - Dia 11:
     - Inicio construção biblioteca cs1180
     - Leitura de Byte em SPI em 16.16us e frequencia de clock em 545.45KHz
@@ -60,6 +84,8 @@
     - Leitura de manuais de indicadores de terceiros;
 
 #### Observações
+- Dia 13:
+    - As funções "u8WriteCS1180()" e "u8_ResetCS1180()" não apresenta gráfico devido ao dado ter sido perdido
 
 - Dia 12: 
     - Foi necessário efetuar alterações na placa com o objetivode se obter um canal de debug para o circuito adc-spi de comunicação, a alteração teve duração de 2horas. A duração se deu em virtude de problemas encontrados durante a alteração;

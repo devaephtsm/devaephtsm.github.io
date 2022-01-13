@@ -107,6 +107,45 @@
 <h4 id="atividades">Atividades</h4>
 <ul>
 <li>
+<p>Dia 13:</p>
+<ul>
+<li>Criado biblioteca vERROR_CHECK() para tratativa de erros (Início)</li>
+<li>
+<p>Criação da função de inicialização do adc com comparação e tratativa de erro (ainda não implementado)
+<img alt="" src="/img/adc_start_01.png" />
+<img alt="" src="/img/adc_start_02.png" />
+<img alt="" src="/img/adc_start_03.png" />
+<img alt="" src="/img/adc_start_04.png" />
+<img alt="" src="/img/adc_start_05.png" />
+<img alt="" src="/img/adc_start_06.png" />
+<img alt="" src="/img/adc_start_07.png" /></p>
+</li>
+<li>
+<p>Testes com a configuração do indicador antigo (Configuração de registradores);</p>
+</li>
+<li>Função de leitura do adc (testado)
+<img alt="" src="/img/func_leitura_data_adc.png" /></li>
+<li>Verificações a respeito dos processos ocorridos no atual indicador de pesagem:<ul>
+<li>Não é feito nenhuma escrita nos registradores de calibração;</li>
+<li>Ao iniciar o atual indicador efetua um comando de reset;</li>
+<li>São configurados alguns registradores 0x00, 0x01 e 0x02<ul>
+<li>Ganho em 128</li>
+<li>Escrita de configuração defaut no registrador 1</li>
+<li>Escrita no registrador MUX com o valor1 </li>
+<li>Escrita no Registrador 0x02 do valor 0x04m ativando o registrador</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>"u8WriteCS1180()" -&gt; testado </p>
+</li>
+<li>
+<p>"u8_ResetCS1180()" -&gt; testado</p>
+</li>
+</ul>
+</li>
+<li>
 <p>Dia 12: </p>
 <ul>
 <li>Teste da função "u8ReadCS1180()". Efetuado teste sobre o ad seguido da requisição de todos os registradores do ADC
@@ -184,7 +223,15 @@
 </ul>
 <h4 id="observacoes">Observações</h4>
 <ul>
-<li>Dia 12: <ul>
+<li>
+<p>Dia 13:</p>
+<ul>
+<li>As funções "u8WriteCS1180()" e "u8_ResetCS1180()" não apresenta gráfico devido ao dado ter sido perdido</li>
+</ul>
+</li>
+<li>
+<p>Dia 12: </p>
+<ul>
 <li>Foi necessário efetuar alterações na placa com o objetivode se obter um canal de debug para o circuito adc-spi de comunicação, a alteração teve duração de 2horas. A duração se deu em virtude de problemas encontrados durante a alteração;</li>
 <li>Foi observado através do teste realizado no dia de trabalho que é possivel através do firmware em desenvolvimento auxiliar nos processos de manutenção de equipamentos;<ul>
 <li>Atravez da certeza que os sinais CS, SDI, SDO, CLK e READ estão chegando no componente AD através de equipamentos como osciloscópio ou analisador lógico, o microcontrolador pode enviar o comando de teste da função "u8_TestADC()". A função pode verificar se o componente ADC esta funcionando corretamente. (Deve-se ter a certeza que as trilas, indutores estão em perfeito funcionamento)</li>
