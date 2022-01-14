@@ -4,6 +4,17 @@
 ### Semana 01
 #### Atividades 
 
+- Dia 14:
+    - Comparação entre dados obtidos da leitura;
+    ![](/img/comparacao_medicoes.png)
+    ![](/img/comparacao_medicoes2.png)
+    ![](/img/adc.png)
+
+    - Criação da biblioteca de conversão dos dados lidos para dados do tipo float 
+        - Para valores negativos é necessário efetuar correção pois esta apresentando erros;
+    - Alteração de retorno de bibliotecas
+    - Alteração do nome de bibliotecas 
+
 - Dia 13:
     - Criado biblioteca vERROR_CHECK() para tratativa de erros (Início)
     - Criação da função de inicialização do adc com comparação e tratativa de erro (ainda não implementado)
@@ -84,6 +95,9 @@
     - Leitura de manuais de indicadores de terceiros;
 
 #### Observações
+
+- Dia 14:
+
 - Dia 13:
     - As funções "u8WriteCS1180()" e "u8_ResetCS1180()" não apresenta gráfico devido ao dado ter sido perdido
 
