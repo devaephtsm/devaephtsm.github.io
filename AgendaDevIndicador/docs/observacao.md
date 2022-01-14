@@ -5,6 +5,7 @@
 #### Atividades 
 
 - Dia 14:
+    - Os dados obtidos não foram obtidos com a calibração atual do equipamento mais sim com aquela adquira na empresa durante o desenvolvimento
     - Comparação entre dados obtidos da leitura;
     ![](/img/comparacao_medicoes.png)
     ![](/img/comparacao_medicoes2.png)
