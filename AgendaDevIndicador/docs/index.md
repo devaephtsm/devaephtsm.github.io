@@ -7,11 +7,12 @@
 * (Aguardando) Calibração e comparação de resultados.
 
 ## SEMANA 02
-* (Iniciado) Testes da placa de desenvolvimento microcontrolador/circuito ADC
+* (OK) Testes da placa de desenvolvimento microcontrolador/circuito ADC
 ### Atividades:
-* (Iniciado) Leitura direta do circuito ADC pelo microcontrolador com debug através da saída serial.
+* (OK) Leitura direta do circuito ADC pelo microcontrolador com debug através da saída serial.
 
 ## SEMANA 03 a 06
+* Integração da da função de start do ADC com a calibração inserida nos registradores de calibração (NOVO)
 * Implementação do filtro Kalman ao processo de pesagem.
 ### Atividades:
 * Implementação da lógica de filtro em linguagem C e Python;
