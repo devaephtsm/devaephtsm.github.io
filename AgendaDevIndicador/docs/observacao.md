@@ -4,6 +4,14 @@
 ### Semana 01
 #### Atividades 
 
+- Dia 17:
+    - Uma saída hipotética para esta situação seria trabalhar com um PGA de alto valor aceitando o ruido proveniente deste PGA e tratar esse problema com o uso de mascaras via software com lógica "E". O Número de divisões informado na tabela abaixo refere-se ao componente ADC e não ao processo (célula de carga). A máscara de bits é utilizada após a rotação a direita em 5 posições do valor recebido pelo adc. A máscara se refere a uma variável do tipo uint32_t.
+    ![](/img/mascara_dados_1.png)
+    ![](/img/mascara_dados_2.png)
+    - Foi averiguado a possivel necessidade de se trabalhar com outras faixas de ganho de PGA como forma de se amenizar problemas oriundos de ruidos. Na hipótese de se trabalhar desta forma cada ganho PGA estaria associado a uma faixa de trabalho de abertura de número de divisões conforme mostrado abaixo 
+    ![](/img/tabelaPGA.png)
+
+
 - Dia 14:
     - Os dados obtidos não foram obtidos com a calibração atual do equipamento mais sim com aquela adquira na empresa durante o desenvolvimento
     - Comparação entre dados obtidos da leitura;
@@ -96,6 +104,9 @@
     - Leitura de manuais de indicadores de terceiros;
 
 #### Observações
+
+- Dia 17:
+    -  Foi solicitação ao Walyson em conversa averiguar a possibilidade de calibração dos multimetros true RMS da empresa como forma de se obter as calibrações dos demais PGA a serem testados bem como a possibilidade de um novo circuito gerador de sinal 
 
 - Dia 14:
 
