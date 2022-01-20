@@ -4,6 +4,44 @@
 ### Semana 01
 #### Atividades 
 
+- Dias 18, 19 e 20
+    - Por questões de desenvolvimento, foi optado pelo trabalho do desenvolvimento deixando em segundo plano a documentação. Os dados espresso representam os dias de desenvolvimento do dia 18, 19 e 20;
+
+    - Alguns estudos foram feitos com o propósito de dar mais precisão ao processo de leitura de dados do ADC, a precisão de variaveis do tipo float apresentam precisão muito baixa, optou-se a alteração para variaveis do tipo double que apresentam uma precisão maior;
+
+    - Testes efetuados de medição com pesos padrões 
+        - Teste 01:
+        ![](/img/teste_01_10_bits.png)
+        ![](/img/teste_01_11_bits.png)
+        ![](/img/teste_01_12_bits.png)
+        ![](/img/teste_01_13_bits.png)
+        ![](/img/teste_01_14_bits.png)
+        ![](/img/teste_01_15_bits.png)
+        ![](/img/teste_01_16_bits.png)
+        ![](/img/teste_01_17_bits.png)
+        ![](/img/teste_01_18_bits.png)
+
+        - Teste 02:
+        ![](/img/teste_02_10_bits.png)
+        ![](/img/teste_02_11_bits.png)
+        ![](/img/teste_02_12_bits.png)
+        ![](/img/teste_02_13_bits.png)
+        ![](/img/teste_02_14_bits.png)
+        ![](/img/teste_02_15_bits.png)
+        ![](/img/teste_02_16_bits.png)
+        ![](/img/teste_02_17_bits.png)
+        ![](/img/teste_02_18_bits.png)
+
+    - Teste feito de conversão de peso 
+
+        ![](/img/teste_peso_01.png)
+
+    - Estudo com célula de carga:
+        
+        ![](/img/teste_celula_carga_01.png)
+
+        - Células de carga não apresenta um comportamento ideal conforme a reta vermelha, podendo ter seu zero deslocado a direita em "d1" posições ou "d2" posições, como consequencia a milivoltagem máxima e minima torna-se alterada, consequentemente altera o valor de máximo e mínimo.
+
 - Dia 17:
     - Uma saída hipotética para esta situação seria trabalhar com um PGA de alto valor aceitando o ruido proveniente deste PGA e tratar esse problema com o uso de mascaras via software com lógica "E". O Número de divisões informado na tabela abaixo refere-se ao componente ADC e não ao processo (célula de carga). A máscara de bits é utilizada após a rotação a direita em 5 posições do valor recebido pelo adc. A máscara se refere a uma variável do tipo uint32_t.
     ![](/img/mascara_dados_1.png)
