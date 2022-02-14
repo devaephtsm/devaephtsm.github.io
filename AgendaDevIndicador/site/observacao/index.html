@@ -53,15 +53,15 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Observações</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#fevereiro">Fevereiro</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#janeiro">Janeiro</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#semana-01">Semana 01</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#atividades">Atividades</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#observacoes">Observações</a>
+    <li class="toctree-l2"><a class="reference internal" href="#problemas">Problemas</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#fevereiro_1">Fevereiro</a>
     </li>
-        </ul>
+    <li class="toctree-l3"><a class="reference internal" href="#janeiro_1">Janeiro</a>
     </li>
         </ul>
     </li>
@@ -102,10 +102,57 @@
             <div class="section">
               
                 <h1 id="observacoes-de-desenvolvimento">OBSERVAÇÕES DE DESENVOLVIMENTO</h1>
-<h2 id="janeiro">Janeiro</h2>
-<h3 id="semana-01">Semana 01</h3>
-<h4 id="atividades">Atividades</h4>
+<h2 id="fevereiro">Fevereiro</h2>
 <ul>
+<li>Dia 14<ul>
+<li>Solicitação de leitura do manual Onix EtherNet/IP para análise do mesmo </li>
+<li>Estudo de instabilidade do filtro;</li>
+</ul>
+</li>
+<li>Dias 07 a 11<ul>
+<li>Ensaios de aquisição de dados e filtragem;</li>
+</ul>
+</li>
+<li>Dias 01 a 04<ul>
+<li>Ensaios de aquisição de dados e filtragem;</li>
+</ul>
+</li>
+</ul>
+<h2 id="janeiro">Janeiro</h2>
+<ul>
+<li>Dia 31<ul>
+<li>Solicitação de documentos INMETRO para desenvolvimento;</li>
+<li>Solicitação de calibração de multimetro;</li>
+</ul>
+</li>
+<li>Dia 24 a 28<ul>
+<li>Testes em filtro (calibração do filtro);<ul>
+<li>Dados armazenados offline;</li>
+</ul>
+</li>
+<li>Elaboração de script python para automatização de testes sobre filtro</li>
+<li>Solicitação de calibração de multimetro.</li>
+</ul>
+</li>
+<li>
+<p>Dia 24</p>
+<ul>
+<li>Criado nova branch corrigir_Convert para ser mesclado com a anterior assim que a correção for finalizada</li>
+<li>Correção da parte negativa de leitura; </li>
+<li>Continuação da elaboração da função de calibração de divisões, seguindo a lógica para uso em sistemas de tempo real (FreeRTOS)<ul>
+<li>A função necessita de um cuidado em especial pois não pode ser uma função com caracteristicas "bloqueantes" para comprometer a ciclicidade do sistema;</li>
+<li>A função visa corrigir problemas encontrados nos testes realizados anteriormente.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Dia 21</p>
+<ul>
+<li>Para padronizar a escala é necessário efetuar a calibração do processo, saber o seu pico e seu ponto de "zero" (que não será zero propriamente dito), para que desta forma torne-se possivel efetuar esse procedimento;</li>
+<li>Novo brach(github) para criar a função de calibração;</li>
+</ul>
+</li>
 <li>
 <p>Dias 18, 19 e 20</p>
 <ul>
@@ -302,8 +349,29 @@
 </ul>
 </li>
 </ul>
-<h4 id="observacoes">Observações</h4>
+<h2 id="problemas">Problemas</h2>
+<h3 id="fevereiro_1">Fevereiro</h3>
 <ul>
+<li>Dia 11<ul>
+<li>Filtro utilizado no processo de aquisição de dados encontra-se com uma instabilidade na região final de leitura será feito um estudo deste problema, enquanto isso será dado prosseguimento em outras parte do projeto </li>
+</ul>
+</li>
+<li>Dia 08<ul>
+<li>Aguardando calibração equipamento multimetro </li>
+</ul>
+</li>
+<li>Dia 07<ul>
+<li>Aguardando posicionamento do setor de qualidade a respeito da solicitação de cotação de calibração de multimetros;</li>
+<li>Documentação a respeito de requisitos do INMETRO enviado é o incorreto</li>
+</ul>
+</li>
+</ul>
+<h3 id="janeiro_1">Janeiro</h3>
+<ul>
+<li>Dia 21: <ul>
+<li>Foi solicitado a gravação de dois produtos "Detector de Pico", os firmwares não foram encontrados na pasta respectiva ao seu armazenamento. Foi encaminhado uma nova cópia juntamente com um tutorial de instalação</li>
+</ul>
+</li>
 <li>
 <p>Dia 17:</p>
 <ul>

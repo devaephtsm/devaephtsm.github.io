@@ -1,8 +1,35 @@
 # OBSERVAÇÕES DE DESENVOLVIMENTO
 
+## Fevereiro
+
+- Dia 14
+    - Solicitação de leitura do manual Onix EtherNet/IP para análise do mesmo 
+    - Estudo de instabilidade do filtro;
+- Dias 07 a 11
+    - Ensaios de aquisição de dados e filtragem;
+- Dias 01 a 04
+    - Ensaios de aquisição de dados e filtragem;
+
 ## Janeiro
-### Semana 01
-#### Atividades 
+
+- Dia 31
+    - Solicitação de documentos INMETRO para desenvolvimento;
+    - Solicitação de calibração de multimetro;
+- Dia 24 a 28
+    - Testes em filtro (calibração do filtro);
+        - Dados armazenados offline;
+    - Elaboração de script python para automatização de testes sobre filtro
+    - Solicitação de calibração de multimetro.
+- Dia 24
+    - Criado nova branch corrigir_Convert para ser mesclado com a anterior assim que a correção for finalizada
+    - Correção da parte negativa de leitura; 
+    - Continuação da elaboração da função de calibração de divisões, seguindo a lógica para uso em sistemas de tempo real (FreeRTOS)
+        - A função necessita de um cuidado em especial pois não pode ser uma função com caracteristicas "bloqueantes" para comprometer a ciclicidade do sistema;
+        - A função visa corrigir problemas encontrados nos testes realizados anteriormente.
+
+- Dia 21
+    - Para padronizar a escala é necessário efetuar a calibração do processo, saber o seu pico e seu ponto de "zero" (que não será zero propriamente dito), para que desta forma torne-se possivel efetuar esse procedimento;
+    - Novo brach(github) para criar a função de calibração;
 
 - Dias 18, 19 e 20
     - Por questões de desenvolvimento, foi optado pelo trabalho do desenvolvimento deixando em segundo plano a documentação. Os dados espresso representam os dias de desenvolvimento do dia 18, 19 e 20;
@@ -141,8 +168,22 @@
 - Dia 04: 
     - Leitura de manuais de indicadores de terceiros;
 
-#### Observações
+## Problemas
 
+### Fevereiro
+
+- Dia 11
+    - Filtro utilizado no processo de aquisição de dados encontra-se com uma instabilidade na região final de leitura será feito um estudo deste problema, enquanto isso será dado prosseguimento em outras parte do projeto 
+- Dia 08
+    - Aguardando calibração equipamento multimetro 
+- Dia 07
+    - Aguardando posicionamento do setor de qualidade a respeito da solicitação de cotação de calibração de multimetros;
+    - Documentação a respeito de requisitos do INMETRO enviado é o incorreto
+
+### Janeiro
+
+- Dia 21: 
+    - Foi solicitado a gravação de dois produtos "Detector de Pico", os firmwares não foram encontrados na pasta respectiva ao seu armazenamento. Foi encaminhado uma nova cópia juntamente com um tutorial de instalação
 - Dia 17:
     -  Foi solicitação ao Walyson em conversa averiguar a possibilidade de calibração dos multimetros true RMS da empresa como forma de se obter as calibrações dos demais PGA a serem testados bem como a possibilidade de um novo circuito gerador de sinal 
 
