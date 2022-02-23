@@ -1,6 +1,17 @@
 # OBSERVAÇÕES DE DESENVOLVIMENTO
 
 ## Fevereiro
+- Dias 15 a 23
+    - Informações Filtro de Pesagem:
+    - Os conceitos abaixo foram obtidos através do empirismo e teoria sobre estudos de sinais. O relatório abaixo não expressará dados matemáticos a não ser que sejam estritamente necessários para a interpretação nos tópicos seguintes;
+    - Conceitos obtidos através da observação do indicador Matrix:
+        - O processo célula-indicador (Matrix) funciona da seguinte maneira: 
+            - (1-A) célula é alimentada com um sinal DC teoricamente de 5V. Teoricamente pela célula ser um composto de resistores, a aplicação de um sinal DC geraria um sinal DC (0 – 10mV). Na prática a célula é alimentada com um sinal DC que varia no tempo, isso se deve ao fato de que a fonte não consegue manter a tensão constante de 5V, isso foi observado em um número alto de fontes, tanto em quantidade como em tipos, informação obtida através de análise. Através deste comportamento características tanto da célula como de parâmetros do ADC são alterados constantemente. É de total conhecimento que é tecnicamente impossível ser cravado 5V constantes sem nenhuma variação, entretanto a variação apresentada, altera significativamente o comportamento do sistema. É possível resolver este problema através de 3 possibilidades, a primeira alterando o projeto da fonte, para uma fonte mais estabilizada, a segunda através de um processo de filtragem do sinal via software (opção adotada), por fim a terceira opção se baseia na mescla entre uma atualização do projeto da fonte e a filtragem via software(recomendada).
+            - (1-B) Em uma situação ideal de ambiente, não havendo interferências externas a “estabilização” total do sistema é uma situação impossível, o processo a ser adotado é a atenuação do sinal obtido e através deste sinal serão utilizados processos de analise e mascaras para o valor peso/força exercido sobre a célula, gerando um valor de peso “virtual”. 
+    - Conceito obtidos através do estudo de sinais:
+        - Sinais obtidos através de células de carga são como demais sinais analógicos, ou seja, somatória de senoides;
+        - Através da análise do sinal lido pelo componente ADC é possível aplicar um estudo dos “sinais” lidos naquele “sinal” entregue. Através deste estudo é possível separar o sinal de ruido do sinal desejado para o processo;
+        - Como o sinal desejado é um sinal DC variável em virtude da alimentação do sistema (sensor e sinal de referência do componente ADC) conforme descrito em 1-B, são necessários outros processos além do processo de filtragem do sinal chamados de “máscara”;
 
 - Dia 14
     - Solicitação de leitura do manual Onix EtherNet/IP para análise do mesmo 
@@ -171,7 +182,8 @@
 ## Problemas
 
 ### Fevereiro
-
+- Dia 23
+    - O desenvolvimento efetuado do dia 15 ao dia 23 se resumiu a compreensão do sinal do sistema e a elaboração de uma nova abordagem para a filtragem do sinal lido pelo adc
 - Dia 11
     - Filtro utilizado no processo de aquisição de dados encontra-se com uma instabilidade na região final de leitura será feito um estudo deste problema, enquanto isso será dado prosseguimento em outras parte do projeto 
 - Dia 08
