@@ -1,6 +1,15 @@
 # OBSERVAÇÕES DE DESENVOLVIMENTO
 
+## Março
+- Dia 07
+    - Inicio dos testes do filtro em tempo real com debug na interface serial (RS485), com output da resposta do adc filtrado
+
+- Dias 01 a 04
+    - Continuação do desenvolvimento do filtro de pesagem 
+
 ## Fevereiro
+- Dias 24 a 28
+    - Continuação do desenvolvimento do filtro de pesagem 
 - Dias 15 a 23
     - Informações Filtro de Pesagem:
     - Os conceitos abaixo foram obtidos através do empirismo e teoria sobre estudos de sinais. O relatório abaixo não expressará dados matemáticos a não ser que sejam estritamente necessários para a interpretação nos tópicos seguintes;
